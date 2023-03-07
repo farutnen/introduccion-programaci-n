@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la programación</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body class ="container">
+    <main class ="row">
+        <div class="col">
+            <h1>Introducción a la programación</h1>
+            <p>en es siguiente articulo verás como programar desde cero</p>
+            <h2>Existen varios elementos comunes en los lenguajes:</h2>
+            <ul>
+                <li>Tipos de datos</li>
+                <li>Variables, Constantes</li>
+                <li>Estructuras</li>
+                <li>Condicionales</li>
+                <li>Bucles</li>
+                <li>Funciones</li>
+                <li>Clases</li>
+            </ul>
+            
+        </div>
+    </main>
+    <section class="row">
+        <p>no importan el tipo de lenguaje que utilicemos porque son conceptos comunes enm la programacion</p>
+    </section>
+    <section>
+        <article class="articulo">
+            <h3>Tipos de datos</h3>
+            <p>Cuando programamos tenemos que trabajar con datos que nosotros entendamos y que el ordenador entienda</p>
+            <p>Hay tipos de datos bastantes frecuentes que sirva para representar una cadena de texto, que normalmente se indican entre comillas ""</p>
+            <p>Todos estos tipos de datos se tienen que acabar almacenándose para que la máquina lo pueda manejar </p>
+        </article>
+        <article class="articule">
+            <h3>Las variables</h3>
+            <p>Son contenedores que nos sirven para guardar éstos datos y utilizarlos. </p>
+            <p>En vez de escribir "Hola mundo!" vamos a poner: "estoy programando" que va a ser una variable</p>
+            <p>Para eso lo nombramos con una palabra reservada (dependiendo que lenguaje estemos usando) seguido del nombre de la variable.</p>
+            <ul>
+                <li>
+                    <p><b>var</b> <i>programacion</i> = "¡Estoy programando!</p>
+                </li>
+            </ul>
+            <p>Entonces la cadena de texto "¡Estoy programando! la almaceno en la variable llamada <i>programacion</i> que lo indico con el signo igual.</p>
+            <p>Si le quisiera cambiar la variable se tendría que volver a nombrar seguido de un igual y el cambio a realizar.</p>
+            <p>Por ejemplo: <b>programacion</b> = "Estoy cambiando el valor!</p>
+
+            <h3>Las constantes</h3>
+            <p>si a la variable anteriormente declarada le indico que es una <i>constante</i> nos va a tirar un error.</p>
+            <p>Ésto significa que no se le puede dar otro valor.</p>
+        </article>
+        <article class="articulo">
+            <h3>Estructuras de datos</h3>
+            <p>Si creamos otra variable para representar numeros tenemos que crearla y ponerle otro nombre</p>
+            <ul>
+                <li>
+                    <p><b>var</b> <i>myNumber</i>= 5 </p>
+                </li>
+                    <p>u otro tipo de valor:</p>
+                <li>
+                    <p><b>var</b> <i>myBoolean</i>(son datos que pueden ser verdaderos o falsos)</p>
+                </li>
+                <li>
+                    <p><b>var</b> <i>myBoolean</i> = <b>true</b></p>
+                </li>
+                <li>
+                    <p><i>myBoolean</i> = <b>false</b></p>
+                </li>
+            </ul>
+            <p>diferentes tipos de datos</p>
+
+            <h3>Estructuras</h3>
+            <p>Si yo quiero definir un monton de strings, no puedo crear un montón de variables solo para una sola cosa.</p>
+            <p>Tenemos diferentes estructuras para representar diferentes tipos de datos.</p>
+            <p>Por ej: un array(o un arreglo) nos sirve para guardar un listado de datos</p>
+            <ul>
+                <li>
+                    <p><b>var</b> <i>myArray</i> = ["Brais", "Moure", "MoureDev"]</p>
+                </li>
+            </ul>
+            <p>En una misma variable guardamos tres datos, de tipo cadena de texto y entre corchetes <b>[ ]</b> y separados por comas ( <b>,</b> ) porque es lo que define su sintaxis en el lenguaje de la programación.</p>
+            <p>El concepto es simple, es una estructura que nos permite guardar varias variables.</p>
+            <p>ahora lo que quiero hacer es crear una clave con su nombre y que tenga asociada su edad:</p>
+            <p><b>var</b> <i>myDict</i> = [ <b>"Brais":</b>35 <b>"Roswell":</b>18 ]</p>
+            <p>ésta sería otra estructura</p>
+        </article>
+        <article class="articule">
+            <h3>Los condicionales</h3>
+            <p>Teniendo en cuenta los booleanos, algo que puede ser verdadero o falso, vamos a utilizarlos como deciciones que tenga que hacer la mácquina.</p>
+            <p>Que nuestro programa sólo puede realizar una acción en concreta si se dan las condiciones dadas.</p>
+            <ul>
+                <li>
+                    <p> <b>var</b> <i>user</i> = "MoureDev"</p>
+                </li>
+                <li>
+                    <p> <b>var</b> <i>password</i> = "1234"</p>
+                </li>
+            </ul>
+            <p>En éste momento entran los condicionales: lo que nos ayuda a que algo sea verdadero o falso.</p>
+            <p>Para eso tenemos: </p>
+            <ul>
+                <li>
+                    <p><b>if</b> <i>user</i> = "MoureDev" <b>&&</b> <i>password</i> = "1234" {  </p>
+                        <p>  print ("He accedido al sistema")</p>
+                    <p>} </p>
+                </li>
+            </ul>
+            <p>Los iguales son dobles porque creamos una relación de igualdad.</p>
+            <p>el codigo dice que si el usuario y la contraseña son correctos se puede acceder al sistema.</p>
+            <p>En caso de que no se cumpla la condición se vuelve <b>false.</b></p>
+            <p>si no se ejecuta la condición le puedo indicar que ejecute otra acción diferente con el <b>else{}</b></p>
+            <ul>
+                <li>
+                    <p><b>if</b> <i>user...</i>{</p>
+                </li>
+                    <ul>
+                        <p>} <b>else</b>{ </p>
+                    </ul>
+                    <ul>
+                        <p><i>print</i>("No he podido acceder") </p>
+                    </ul>
+                    <p>}</p>
+            </ul>
+            <p>Otra estructuras:</p>
+            <ul>
+                <li>
+                    <p><b>else if{}</b></p>
+                </li>
+                <li>comentarios <b>//comentamos nuestro código para que no lo tenga en cuenta la máquina, no se ejecuta.</b></li>
+            </ul>
+        </article>
+        <article class="articulo">
+            <h3>Bucles</h3>
+            <p>Para poder correr un mismo codigo más de una vez se utilizan los bucles. Son para repetir algo concreto</p>
+            <p>yo podría indicar que se repita </p>
+        </article>
+    </section>
+</body>
+</html>
